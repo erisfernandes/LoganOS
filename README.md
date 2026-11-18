@@ -1,4 +1,4 @@
-<p align="center"><img src="marca/loganos.svg" width="96" alt=""></p>
+<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="marca/loganos-branco.svg"><img src="marca/loganos-preto.svg" width="96" alt="LoganOS"></picture></p>
 
 # LoganOS
 

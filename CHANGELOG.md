@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.68.2 (2026-11-18)
+
+- Fix: the Links app could not read the title and icon of a pasted page since 1.66.0.
+
 ## 1.68.1 (2026-11-18)
 
 - Releases are signed with minisign (key 407236916ABFC1EF). From this version on, updates are installed only when the signature matches. Verify by hand with `minisign -Vm loganos.py -P RWTvwb9qkTZyQBKWsZ2B8t/Fbq7kBgZ9Feuvr66yYaP0Y6aqZhf9XcG6`.

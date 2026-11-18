@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.69.1 (2026-11-18)
+
+- Fix: on machines with the LoganOS backup configured, the 1.69.0 migration started the dashboard with an empty data folder (the data stayed untouched in the old folder). Running `--instalar` of 1.69.1 moves the data and fixes it. The backup state now lives in `/var/lib/loganos-backup`.
+
 ## 1.69.0 (2026-11-18)
 
 - Everything LoganOS creates on the system is now named `loganos`: `loganos.service`, the `loganos-*` helpers and the data folder `/var/lib/private/loganos`. Installations from earlier versions are migrated by `--instalar`, keeping the account, the data and the port.

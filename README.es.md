@@ -46,9 +46,9 @@ Pregunta antes de quitar nada y pregunta otra vez antes de borrar tus datos.
 - En la red de casa la página usa HTTP sin cifrado. Para HTTPS, usa Tailscale (`--https`).
 - El panel corre como un `DynamicUser` de systemd, sin privilegios, y no como root.
 - Tres ayudantes pequeños corren como root, cada uno con una lista fija de acciones. Nada escrito en la página se vuelve parte de un comando:
-  - `painel-servicos`: lee la lista de servicios y los puertos abiertos.
-  - `painel-ajudante`: lee la salud de los discos (SMART), las actualizaciones del sistema y las versiones.
-  - `painel-pedidos`: reinicia un servicio que falló, monta y desmonta discos USB, actualiza LoganOS y el baúl de contraseñas opcional. La solicitud es solo un nombre de archivo, comprobado contra patrones fijos.
+  - `loganos-servicos`: lee la lista de servicios, los puertos abiertos y los discos.
+  - `loganos-ajudante`: lee la salud de los discos (SMART), las actualizaciones del sistema, las versiones, el resumen de Pi-hole y el estado del HTTPS.
+  - `loganos-pedidos`: reinicia un servicio que falló, monta y desmonta discos USB, hace la copia de seguridad, actualiza LoganOS y el baúl de contraseñas opcional. La solicitud es solo un nombre de archivo, comprobado contra patrones fijos.
 - Sin telemetría. Conexiones hacia internet, todas opcionales o a pedido: prueba de velocidad (Cloudflare), versiones nuevas (GitHub), ntfy.sh como respaldo de los avisos, comprobación del DNS (`www.google.com`) y las páginas que guardas en Links.
 
 ## Soporte

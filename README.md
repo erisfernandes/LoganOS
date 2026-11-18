@@ -46,9 +46,9 @@ It asks before removing anything, and asks again before deleting your data.
 - On the home network the page uses plain HTTP. For HTTPS, use Tailscale (`--https`).
 - The dashboard itself runs as an unprivileged systemd `DynamicUser`, not as root.
 - Three small helpers run as root, each with a fixed list of actions. Nothing typed on the page becomes part of a command:
-  - `painel-servicos`: reads the list of services and open ports.
-  - `painel-ajudante`: reads disk health (SMART), system updates and versions.
-  - `painel-pedidos`: restarts a service that has failed, mounts and unmounts USB disks, updates LoganOS and the optional password vault. The request is only a file name, checked against fixed patterns.
+  - `loganos-servicos`: reads the list of services, open ports and disks.
+  - `loganos-ajudante`: reads disk health (SMART), system updates, versions, the Pi-hole summary and the HTTPS state.
+  - `loganos-pedidos`: restarts a service that has failed, mounts and unmounts USB disks, runs the backup, updates LoganOS and the optional password vault. The request is only a file name, checked against fixed patterns.
 - No telemetry. Outbound connections, all optional or on demand: speed test (Cloudflare), new versions (GitHub), ntfy.sh as a notification fallback, a DNS check (`www.google.com`), and the pages you save in Links.
 
 ## Support

@@ -4,7 +4,7 @@
 
 **English** · [Português](README.pt-BR.md) · [Español](README.es.md)
 
-A home server dashboard in a single Python file. Shortcuts to your services, a system monitor, disks with SMART health, security events, notifications, backups and small built-in apps (Notes, Links, Camera). No pip, no Docker, no database: only the Python standard library.
+A home lab dashboard in a single Python file. Shortcuts to your services, a system monitor, disks with SMART health, security events, notifications, backups and small built-in apps (Notes, Links, Camera). No pip, no Docker, no database: only the Python standard library.
 
 Named after Logan, the author's Belgian Shepherd.
 

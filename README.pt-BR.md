@@ -4,7 +4,7 @@
 
 [English](README.md) · **Português** · [Español](README.es.md)
 
-Um painel para servidor caseiro num arquivo Python só. Atalhos para os seus serviços, monitor do sistema, discos com a saúde pelo SMART, eventos de segurança, notificações, backups e apps pequenos embutidos (Notas, Links, Câmera). Sem pip, sem Docker, sem banco de dados: só a biblioteca padrão do Python.
+Um painel para home lab num arquivo Python só. Atalhos para os seus serviços, monitor do sistema, discos com a saúde pelo SMART, eventos de segurança, notificações, backups e apps pequenos embutidos (Notas, Links, Câmera). Sem pip, sem Docker, sem banco de dados: só a biblioteca padrão do Python.
 
 O nome vem do Logan, o pastor belga do autor.
 

@@ -17,9 +17,9 @@ Named after Logan, the author's Belgian Shepherd.
 ## Install
 
 ```sh
-sudo mkdir -p /opt/painel
-sudo curl -fsSL -o /opt/painel/painel.py https://github.com/erisfernandes/loganos/releases/latest/download/loganos.py
-sudo python3 /opt/painel/painel.py --instalar
+sudo mkdir -p /opt/loganos
+sudo curl -fsSL -o /opt/loganos/loganos.py https://github.com/erisfernandes/loganos/releases/latest/download/loganos.py
+sudo python3 /opt/loganos/loganos.py --instalar
 ```
 
 Open `http://<server-ip>:8092` and create your account. The language follows your browser (English, Portuguese or Spanish) and can be changed in Settings.
@@ -29,7 +29,7 @@ Open `http://<server-ip>:8092` and create your account. The language follows you
 From the page (Settings, Security, Versions) or in the terminal:
 
 ```sh
-sudo python3 /opt/painel/painel.py --atualizar
+sudo python3 /opt/loganos/loganos.py --atualizar
 ```
 
 The update downloads the latest release and installs it only if its SHA-256 matches the published `loganos.py.sha256`. If the new version does not start, the previous one comes back by itself.
@@ -37,7 +37,7 @@ The update downloads the latest release and installs it only if its SHA-256 matc
 ## Uninstall
 
 ```sh
-sudo python3 /opt/painel/painel.py --desinstalar
+sudo python3 /opt/loganos/loganos.py --desinstalar
 ```
 
 It asks before removing anything, and asks again before deleting your data.

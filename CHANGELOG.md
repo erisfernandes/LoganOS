@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.69.0 (2026-11-18)
+
+- Everything LoganOS creates on the system is now named `loganos`: `loganos.service`, the `loganos-*` helpers and the data folder `/var/lib/private/loganos`. Installations from earlier versions are migrated by `--instalar`, keeping the account, the data and the port.
+- Recommended location is now `/opt/loganos/loganos.py`. Any folder outside `/root`, `/home` and `/tmp` works.
+- Fix: `--desinstalar` stopped early on machines without Tailscale.
+- Downloaded files are named `loganos-*`.
+
 ## 1.68.2 (2026-11-18)
 
 - Fix: the Links app could not read the title and icon of a pasted page since 1.66.0.

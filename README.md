@@ -6,8 +6,6 @@
 
 A home lab dashboard in a single Python file. Shortcuts to your services, a system monitor, disks with SMART health, security events, notifications, backups and small built-in apps (Notes, Links, Camera). No pip, no Docker, no database: only the Python standard library.
 
-Named after Logan, the author's Belgian Shepherd.
-
 ## Requirements
 
 - Linux with systemd. Tested on **Debian 13 (x86_64)**. Debian 12, Ubuntu 24.04 and Raspberry Pi OS should work but are not tested yet.

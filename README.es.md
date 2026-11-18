@@ -6,8 +6,6 @@
 
 Un panel para home lab en un solo archivo Python. Accesos a tus servicios, monitor del sistema, discos con la salud por SMART, eventos de seguridad, notificaciones, copias de seguridad y pequeñas apps integradas (Notas, Links, Cámara). Sin pip, sin Docker, sin base de datos: solo la biblioteca estándar de Python.
 
-El nombre viene de Logan, el pastor belga del autor.
-
 ## Requisitos
 
 - Linux con systemd. Probado en **Debian 13 (x86_64)**. Debian 12, Ubuntu 24.04 y Raspberry Pi OS deberían funcionar, pero todavía no se probaron.

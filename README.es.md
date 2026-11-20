@@ -20,7 +20,7 @@ Un panel para home lab en un solo archivo Python. Accesos a tus servicios, monit
 
 ```sh
 sudo mkdir -p /opt/loganos
-sudo curl -fsSL -o /opt/loganos/loganos.py https://github.com/erisfernandes/loganos/releases/latest/download/loganos.py
+sudo curl -fsSL -o /opt/loganos/loganos.py https://github.com/erisfernandes/LoganOS/releases/latest/download/loganos.py
 sudo python3 /opt/loganos/loganos.py --instalar
 ```
 
@@ -73,7 +73,7 @@ Pregunta antes de quitar nada y pregunta otra vez antes de borrar tus datos.
 
 ## Soporte
 
-Solo por las [issues de GitHub](https://github.com/erisfernandes/loganos/issues), sin plazo de respuesta. Indica la versión, el sistema y el registro exportado.
+Solo por las [issues de GitHub](https://github.com/erisfernandes/LoganOS/issues), sin plazo de respuesta. Indica la versión, el sistema y el registro exportado.
 
 ## Licencia
 

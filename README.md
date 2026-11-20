@@ -20,7 +20,7 @@ A home lab dashboard in a single Python file. Shortcuts to your services, a syst
 
 ```sh
 sudo mkdir -p /opt/loganos
-sudo curl -fsSL -o /opt/loganos/loganos.py https://github.com/erisfernandes/loganos/releases/latest/download/loganos.py
+sudo curl -fsSL -o /opt/loganos/loganos.py https://github.com/erisfernandes/LoganOS/releases/latest/download/loganos.py
 sudo python3 /opt/loganos/loganos.py --instalar
 ```
 
@@ -73,7 +73,7 @@ It asks before removing anything, and asks again before deleting your data.
 
 ## Support
 
-Only through [GitHub issues](https://github.com/erisfernandes/loganos/issues), with no response time. Please include the version, the system and the exported log.
+Only through [GitHub issues](https://github.com/erisfernandes/LoganOS/issues), with no response time. Please include the version, the system and the exported log.
 
 ## License
 

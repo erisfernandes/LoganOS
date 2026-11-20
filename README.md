@@ -6,6 +6,10 @@
 
 A home lab dashboard in a single Python file. Shortcuts to your services, a system monitor, disks with SMART health, security events, notifications, backups and small built-in apps (Notes, Links, Camera). No pip, no Docker, no database: only the Python standard library.
 
+<p align="center"><img src="imagens/inicio.png" alt="LoganOS"></p>
+
+<p align="center"><img src="imagens/monitor.png" width="72%" alt="Monitor"> <img src="imagens/celular.png" width="24%" alt="LoganOS"></p>
+
 ## Requirements
 
 - Linux with systemd. Tested on **Debian 13 (x86_64)**. Debian 12, Ubuntu 24.04 and Raspberry Pi OS should work but are not tested yet.
@@ -31,6 +35,22 @@ sudo python3 /opt/loganos/loganos.py --atualizar
 ```
 
 The update downloads the latest release and installs it only if its SHA-256 matches the published `loganos.py.sha256`. If the new version does not start, the previous one comes back by itself.
+
+## Verify a download
+
+Every release is signed with [minisign](https://jedisct1.github.io/minisign/). The public key (id 407236916ABFC1EF) is:
+
+```
+RWTvwb9qkTZyQBKWsZ2B8t/Fbq7kBgZ9Feuvr66yYaP0Y6aqZhf9XcG6
+```
+
+With `loganos.py` and `loganos.py.minisig` from the release in the same folder:
+
+```sh
+minisign -Vm loganos.py -P RWTvwb9qkTZyQBKWsZ2B8t/Fbq7kBgZ9Feuvr66yYaP0Y6aqZhf9XcG6
+```
+
+The dashboard does the same check by itself before installing an update.
 
 ## Uninstall
 

@@ -6,6 +6,10 @@
 
 Un panel para home lab en un solo archivo Python. Accesos a tus servicios, monitor del sistema, discos con la salud por SMART, eventos de seguridad, notificaciones, copias de seguridad y pequeñas apps integradas (Notas, Links, Cámara). Sin pip, sin Docker, sin base de datos: solo la biblioteca estándar de Python.
 
+<p align="center"><img src="imagens/inicio.png" alt="LoganOS"></p>
+
+<p align="center"><img src="imagens/monitor.png" width="72%" alt="Monitor"> <img src="imagens/celular.png" width="24%" alt="LoganOS"></p>
+
 ## Requisitos
 
 - Linux con systemd. Probado en **Debian 13 (x86_64)**. Debian 12, Ubuntu 24.04 y Raspberry Pi OS deberían funcionar, pero todavía no se probaron.
@@ -31,6 +35,22 @@ sudo python3 /opt/loganos/loganos.py --atualizar
 ```
 
 La actualización descarga la última release y solo la instala si el SHA-256 coincide con el `loganos.py.sha256` publicado. Si la versión nueva no arranca, vuelve sola la anterior.
+
+## Comprobar una descarga
+
+Cada release está firmada con [minisign](https://jedisct1.github.io/minisign/). La clave pública (id 407236916ABFC1EF) es:
+
+```
+RWTvwb9qkTZyQBKWsZ2B8t/Fbq7kBgZ9Feuvr66yYaP0Y6aqZhf9XcG6
+```
+
+Con `loganos.py` y `loganos.py.minisig` de la release en la misma carpeta:
+
+```sh
+minisign -Vm loganos.py -P RWTvwb9qkTZyQBKWsZ2B8t/Fbq7kBgZ9Feuvr66yYaP0Y6aqZhf9XcG6
+```
+
+El panel hace la misma comprobación solo antes de instalar una actualización.
 
 ## Desinstalar
 

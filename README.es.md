@@ -10,6 +10,8 @@ Un panel para home lab en un solo archivo Python. Accesos a tus servicios, monit
 
 <p align="center"><img src="imagens/monitor.png" width="72%" alt="Monitor"> <img src="imagens/celular.png" width="24%" alt="LoganOS"></p>
 
+<p align="center"><img src="imagens/entrada.png" width="48%" alt="Sign in"> <img src="imagens/ajustes.png" width="48%" alt="Settings"></p>
+
 ## Requisitos
 
 - Linux con systemd. Probado en **Debian 13 (x86_64)**. Debian 12, Ubuntu 24.04 y Raspberry Pi OS deberían funcionar, pero todavía no se probaron.

@@ -10,6 +10,8 @@ A home lab dashboard in a single Python file. Shortcuts to your services, a syst
 
 <p align="center"><img src="imagens/monitor.png" width="72%" alt="Monitor"> <img src="imagens/celular.png" width="24%" alt="LoganOS"></p>
 
+<p align="center"><img src="imagens/entrada.png" width="48%" alt="Sign in"> <img src="imagens/ajustes.png" width="48%" alt="Settings"></p>
+
 ## Requirements
 
 - Linux with systemd. Tested on **Debian 13 (x86_64)**. Debian 12, Ubuntu 24.04 and Raspberry Pi OS should work but are not tested yet.

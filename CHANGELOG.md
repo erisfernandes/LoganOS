@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.83.0 (2026-11-25)
+
+Brings everything since 1.69.1 in a single update.
+
+- New **Tasks** system app: lists, groups, steps, due dates, My Day, starred and archived lists, trash, swipe gestures on phones and pull to refresh. It can be added to the iPhone home screen as its own app. Optional terminal access with `--tarefas`, or over SSH with a key restricted to that command (`--tarefas-ssh`).
+- **Backup**: prepare a USB stick as the backup destination from the page (password required); **folder copy**, which copies chosen folders (photos, documents) to another disk after each backup with rsync, into `loganos-copias` on that disk. Nothing is ever deleted from the copy, and only folders under `/mnt` or `/media` on a disk other than the system disk and the destination are accepted.
+- **Settings, Terminal commands**: Debian shortcuts and commands by topic, each with what it does, a search box and a copy button. Only in Portuguese for now; the translation will come in a later version.
+- Read-only display key and `/api/visor` endpoint for small status screens.
+- Optional switch to delete unused Docker images (in Security, Versions; off by default).
+- System apps show an icon per app, with icon buttons for export, import and uninstall.
+- The Vault backup option appears when the Vaultwarden folder is readable only by root.
+- Layout fixes on phones and in Settings.
+
 ## 1.69.1 (2026-11-18)
 
 - Fix: on machines with the LoganOS backup configured, the 1.69.0 migration started the dashboard with an empty data folder (the data stayed untouched in the old folder). Running `--instalar` of 1.69.1 moves the data and fixes it. The backup state now lives in `/var/lib/loganos-backup`.
